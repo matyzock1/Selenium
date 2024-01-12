@@ -1,0 +1,33 @@
+Usar katalon recorder para generar el script que automatiza.
+
+Usar el script generado en JMeter
+
+
+org.openqa.selenium.By.id
+
+driver.get("https://demoqa.com/text-box");
+driver.findElement(By.id("userName")).click();
+driver.findElement(By.id("userName")).clear();
+driver.findElement(By.id("userName")).sendKeys("Matías Aravena");
+driver.findElement(By.id("userEmail")).clear();
+driver.findElement(By.id("userEmail")).sendKeys("matyzock@gmail.com");
+driver.findElement(By.id("currentAddress")).clear();
+driver.findElement(By.id("currentAddress")).sendKeys("Pedro Fontova 7150");
+driver.findElement(By.id("permanentAddress")).clear();
+driver.findElement(By.id("permanentAddress")).sendKeys("Pedro Vafonto 5071");
+driver.findElement(By.xpath("//div[@id='app']/div/div/div[2]/div[2]")).click();
+driver.findElement(By.id("submit")).click();
+
+
+WDS.browser.get("https://demoqa.com/text-box")
+WDS.browser.findElement(org.openqa.selenium.By.id("userName")).click()
+WDS.browser.findElement(org.openqa.selenium.By.id("userName")).clear()
+WDS.browser.findElement(org.openqa.selenium.By.id("userName")).sendKeys("Matías Aravena")
+WDS.browser.findElement(org.openqa.selenium.By.id("userEmail")).clear()
+WDS.browser.findElement(org.openqa.selenium.By.id("userEmail")).sendKeys("matyzock@gmail.com")
+WDS.browser.findElement(org.openqa.selenium.By.id("currentAddress")).clear()
+WDS.browser.findElement(org.openqa.selenium.By.id("currentAddress")).sendKeys("Pedro Fontova 7150")
+WDS.browser.findElement(org.openqa.selenium.By.id("permanentAddress")).clear()
+WDS.browser.findElement(org.openqa.selenium.By.id("permanentAddress")).sendKeys("Pedro Vafonto 5071")
+WDS.browser.findElement(org.openqa.selenium.By.xpath("//div[@id='app']/div/div/div[2]/div[2]")).click()
+WDS.browser.findElement(org.openqa.selenium.By.id("submit")).click()
